@@ -18,11 +18,16 @@ def run_app():
     label_button = ctk.CTkButton(root, text="Szukaj", font=("Roboto", 16, "bold"))
     label_button.grid(row=0, column=1, padx=10, pady=5)
 
-    # text with basic information about the city
-    label_text = ctk.CTkLabel(root, text="Today is...", font=("Roboto", 16,"bold"))
-    label_text.grid(row=1, column=0, padx=20, pady=5)
+    # text with the name of the city
+    label_name = ctk.CTkLabel(root, text="Today is...", font=("Roboto", 16,"bold"))
+    label_name.grid(row=1, column=0, padx=20, pady=5)
 
+    # temperature in the city
     label_temperature = ctk.CTkLabel(root, text="20", font=("Roboto", 16,"bold"))
     label_temperature.grid(row=2, column=0, padx=20, pady=5)
+
+    # description of the weather in the city
+    label_description = ctk.CTkLabel(root, text="description", font=("Roboto", 16,"bold"))
+    label_description.grid(row=3, column=0, padx=20, pady=5)
 
     root.mainloop()
