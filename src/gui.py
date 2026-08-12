@@ -30,4 +30,10 @@ def run_app():
     label_description = ctk.CTkLabel(root, text="description", font=("Roboto", 16,"bold"))
     label_description.grid(row=3, column=0, columnspan=2, padx=20, pady=5)
 
+    label_perceivedTemperature = ctk.CTkLabel(root, text="20", font=("Roboto", 10))
+    label_perceivedTemperature.grid(row=4, column=0, padx=20, pady=5)
+
+    label_wind = ctk.CTkLabel(root, text="20", font=("Roboto", 10))
+    label_wind.grid(row=4, column=1, padx=20, pady=5)
+
     root.mainloop()
