@@ -19,7 +19,7 @@ def run_app():
     label_button.grid(row=0, column=1, padx=10, pady=5)
 
     # text with the name of the city
-    label_name = ctk.CTkLabel(root, text="Today is...", font=("Roboto", 16,"bold"))
+    label_name = ctk.CTkLabel(root, text="city", font=("Roboto", 16,"bold"))
     label_name.grid(row=1, column=0, padx=20, pady=5)
 
     # temperature in the city
