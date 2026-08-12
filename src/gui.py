@@ -22,4 +22,7 @@ def run_app():
     label_text = ctk.CTkLabel(root, text="Today is...", font=("Roboto", 16,"bold"))
     label_text.grid(row=1, column=0, padx=20, pady=5)
 
+    label_temperature = ctk.CTkLabel(root, text="20", font=("Roboto", 16,"bold"))
+    label_temperature.grid(row=2, column=0, padx=20, pady=5)
+
     root.mainloop()
