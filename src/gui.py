@@ -9,4 +9,6 @@ def run_app():
     root.title("Weather App")
     root.geometry("300x300")
 
+    label_text = ctk.CtkLabel(root, text="", font=("Roboto", 16,"bold") )
+
     root.mainloop()
