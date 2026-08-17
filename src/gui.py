@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from PIL import Image
 
 def run_app():
 
@@ -30,12 +31,18 @@ def run_app():
     label_description = ctk.CTkLabel(root, text="description", font=("Segoe UI", 32,"bold"))
     label_description.grid(row=3, column=0, columnspan=2, padx=10, pady=5)
 
+    # image 
+    description_image = ctk.CTkImage(light_image=Image.open("assets/face.png"), dark_image=Image.open("assets/face.png"), size=(100, 50))
+
+    label_image = ctk.CTkLabel(root, text="", image=description_image)
+    label_image.grid(row=4, column=0, columnspan=2, padx=10, pady=3)
+
     # perceived temperature
     label_perceivedTemperature = ctk.CTkLabel(root, text="Perceived: 20", font=("Segoe UI", 16))
-    label_perceivedTemperature.grid(row=4, column=0, padx=10, pady=5)
+    label_perceivedTemperature.grid(row=5, column=0, padx=10, pady=5)
 
     # wind
     label_wind = ctk.CTkLabel(root, text="Wind: 20", font=("Segoe UI", 16))
-    label_wind.grid(row=4, column=1, padx=10, pady=5)
+    label_wind.grid(row=5, column=1, padx=10, pady=5)
 
     root.mainloop()
