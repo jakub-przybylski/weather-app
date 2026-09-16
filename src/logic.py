@@ -16,7 +16,7 @@ def get_data(city_name):
     if not key or not city_name.strip():
         return None
 
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={key}&units=metric&lang=pl"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={key}&units=metric&lang=en"
 
     try:
         response = requests.get(url)
