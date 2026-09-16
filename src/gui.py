@@ -21,15 +21,15 @@ def run_app():
     label_button.grid(row=1, column=0, columnspan=2, padx=10, pady=5, sticky="ew")
 
     # text with the name of the city
-    label_name = ctk.CTkLabel(root, text="city", font=("Segoe UI", 40,"bold"))
+    label_name = ctk.CTkLabel(root, text=" ", font=("Segoe UI", 40,"bold"))
     label_name.grid(row=2, column=0, columnspan=2, padx=10, pady=5, sticky="ew")
 
     # temperature in the city
-    label_temperature = ctk.CTkLabel(root, text="20", font=("Segoe UI", 40,"bold"))
+    label_temperature = ctk.CTkLabel(root, text=" ", font=("Segoe UI", 40,"bold"))
     label_temperature.grid(row=3, column=0, columnspan=2, padx=10, pady=5)
 
     # description of the weather in the city
-    label_description = ctk.CTkLabel(root, text="description", font=("Segoe UI", 32,"bold"))
+    label_description = ctk.CTkLabel(root, text=" ", font=("Segoe UI", 32,"bold"))
     label_description.grid(row=4, column=0, columnspan=2, padx=10, pady=5, sticky="ew")
 
     # image 
