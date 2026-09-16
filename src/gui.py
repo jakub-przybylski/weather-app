@@ -10,7 +10,7 @@ def run_app():
     root.grid_columnconfigure(0, weight=1)
     root.grid_columnconfigure(1, weight=1)
     root.title("Weather App")
-    root.geometry("400x400")
+    root.geometry("400x440")
 
     # space to enter the name of ther city
     label_input = ctk.CTkEntry(root, placeholder_text="Enter the city", font=("Segoe UI", 20, "bold"))
