@@ -31,7 +31,11 @@ def get_data(city_name):
                 "wind": f"Wind: {round(data['wind']['speed'] * 3.6)} km/h"
             }
         else:
+            error()
             return None
     except:
         error()
         return None
+
+
+
