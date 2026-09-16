@@ -1,14 +1,16 @@
 import requests 
 import os
+from tkinter import messagebox
 from dotenv import load_dotenv
 
 load_dotenv()
 
 key = os.getenv("OPENWEATHER_API_KEY")
-
+#function for error communicate 
 def error():
-    messagebox.showerror("Failed to save changes. Please try again.")
+    messagebox.showerror("Error", "Failed to fetch weather data. Please try again.")
 
+# function for getting data from api
 def get_data(city_name):
 
     if not key or not city_name.strip():
@@ -18,7 +20,8 @@ def get_data(city_name):
 
     try:
         response = requests.get(url)
-        if response.status_code() == 200:
+        if response.status_code == 200:
+            # creating json file for holding the data
             data = response.json()
             return {
                 "city": data["name"],
