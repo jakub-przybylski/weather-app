@@ -36,11 +36,11 @@ def run_app():
     label_image.grid(row=5, column=0, columnspan=2, padx=10, pady=3, sticky="ew")
 
     # perceived temperature
-    label_perceivedTemperature = ctk.CTkLabel(root, text="Perceived: 20", font=("Segoe UI", 20))
+    label_perceivedTemperature = ctk.CTkLabel(root, text=" ", font=("Segoe UI", 20))
     label_perceivedTemperature.grid(row=6, column=0, padx=10, pady=5, sticky="ew")
 
     # wind
-    label_wind = ctk.CTkLabel(root, text="Wind: 20", font=("Segoe UI", 20))
+    label_wind = ctk.CTkLabel(root, text=" ", font=("Segoe UI", 20))
     label_wind.grid(row=6, column=1, padx=10, pady=5, sticky="ew")
 
     def search():
