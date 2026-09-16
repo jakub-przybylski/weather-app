@@ -28,7 +28,8 @@ def get_data(city_name):
                 "temp": f"{round(data['main']['temp'])}°C",
                 "feels_like": f"Perceived: {round(data['main']['feels_like'])}°C",
                 "description": data["weather"][0]["description"].capitalize(),
-                "wind": f"Wind: {round(data['wind']['speed'] * 3.6)} km/h"
+                "wind": f"Wind: {round(data['wind']['speed'] * 3.6)} km/h",
+                "id": data["weather"][0]["id"]
             }
         else:
             error()
