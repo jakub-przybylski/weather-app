@@ -38,5 +38,8 @@ def get_data(city_name):
         error()
         return None
 
-
+def get_image(weather_id)
+    match weather_id:
+        case 
+        
 
