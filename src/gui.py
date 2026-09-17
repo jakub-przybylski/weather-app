@@ -59,7 +59,7 @@ def run_app():
             new_image = ctk.CTkImage(
                 light_image=Image.open(image_path),
                 dark_image=Image.open(image_path),
-                size=(140, 70)
+                size=(100, 100)
             )
             label_image.configure(image=new_image)
         except FileNotFoundError:

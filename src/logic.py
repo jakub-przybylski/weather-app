@@ -40,19 +40,19 @@ def get_data(city_name):
 
 def get_image(weather_id):
     if 200 <= weather_id <= 232:
-        return "assets/thunderstorm.png"
+        return "assets/thunder.png"
     elif 300 <= weather_id <= 321:
-        return "assets/drizzle.png"
+        return "assets/rain.png"
     elif 500 <= weather_id <= 531:
         return "assets/rain.png"
     elif 600 <= weather_id <= 622:
         return "assets/snow.png"
     elif 701 <= weather_id <= 781:
-        return "assets/atmosphere.png"
+        return "assets/cloudy.png"
     elif weather_id == 800:
-        return "assets/clear.png"
+        return "assets/sun.png"
     elif 801 <= weather_id <= 804:
-        return "assets/clouds.png"
+        return "assets/cloudy.png"
     else:
         return "assets/face.png"
         
