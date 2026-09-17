@@ -13,6 +13,17 @@
    ```bash
    git clone [https://github.com/jakub-przybylski/weather-app.git](https://github.com/jakub-przybylski/weather-app.git)
    cd weather-app
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install customtkinter requests pillow python-dotenv
+   ```
+3. **Configure your API Key:**
+   ```bash
+   Create a `.env` file in the root directory and add your OpenWeatherMap API key:
+   env
+   OPENWEATHER_API_KEY=your_api_key_here
+   ```
 
 ## Usage & Features
 
@@ -26,6 +37,11 @@
 * **Dynamic Weather Icons:** Automatically updates UI icons based on OpenWeatherMap condition IDs (e.g., sun, rain, snow, clouds, thunderstorm).
 * **Modern GUI:** Built with `CustomTkinter` using a dark-mode theme and custom styling.
 * **Error Handling:** Built-in safeguards for invalid city names, missing API keys, or missing graphic assets.
+
+## Author 
+
+* Name: Jakub Przybylski
+* Email: jakubprzybylski676@gmail.com
 
 
 
