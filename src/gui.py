@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from PIL import Image
 from logic import get_data
+from logic import get_image
 
 def run_app():
 
@@ -52,6 +53,17 @@ def run_app():
         label_description.configure(text=weather["description"])
         label_perceivedTemperature.configure(text=weather["feels_like"])
         label_wind.configure(text=weather["wind"])
+
+        image_path = get_image(weather["id"])
+        try: 
+            new_image = ctk.CTkImage(
+                light_image=Image.open(image_path),
+                dark_image=Image.open(image_path),
+                size=(140, 70)
+            )
+            label_image.configure(image=new_image)
+        except FileNotFoundError:
+            pass 
 
     # button to search the city
     label_button = ctk.CTkButton(root, text="Search", font=("Segoe UI", 20, "bold"), command=search)
